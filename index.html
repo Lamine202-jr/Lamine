@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Lamine Junior</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/messages.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo">Lamine Junior</div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="messages.html" class="messages-link">
+          <i class="fas fa-envelope"></i>
+          <span class="badge" id="message-badge"></span>
+          Messages
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis Lamine Junior, développeur web et mobile débutant basé à Bingerville.</p>
+    <p>Je conçois des sites modernes, fonctionnels et adaptés aux besoins des utilisateurs.</p>
+  </section>
+
+  <section id="skills">
+    <h2>🧰 Compétences techniques</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript, PHP</li>
+      <li>Responsive design, animations CSS, formulaires interactifs</li>
+      <li>Traitement de formulaires, envoi d’e-mails, bases de données MySQL</li>
+      <li>Conception et réalisation complète de sites</li>
+    </ul>
+  </section>
+ 
+  <section id="projects">
+    <h2>📁 Projets réalisés</h2>
+    <div class="projects-container">
+        <div class="project">
+            <img src="images/projet3.jpeg" alt="Site e-commerce" onclick="openLightbox('images/projet3.jpeg')">
+            <h3>🛒 Site E-commerce 1</h3>
+            <p>Développement d’un site de vente en ligne avec panier dynamique.</p>
+        </div>
+        <div class="project">
+            <img src="images/projet1.jpeg" alt="Site vitrine" onclick="openLightbox('images/projet1.jpeg')">
+            <h3>🧾 Site de vente en ligne 1</h3>
+            <p>Présentation des produits et commande en ligne.</p>
+        </div>
+    </div>
+    <div class="projects-container">
+        <div class="project">
+            <img src="images/projet2.jpeg" alt="Site e-commerce" onclick="openLightbox('images/projet2.jpeg')">
+            <h3>🛒 Site de vente en ligne 2</h3>
+            <p>Présentation des produits et commande en ligne.</p>
+        </div>
+        <div class="project">
+            <img src="images/projet4.jpg" alt="Site vitrine" onclick="openLightbox('images/projet4.jpeg')">
+            <h3>🧾 Site E- commerce 2</h3>
+            <p>Développement d’un site de vente en ligne avec panier dynamique.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Conteneur pour Lightbox -->
+<div id="lightbox" class="hidden">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Agrandissement">
+</div>
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form id="contact-form">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lamine Junior. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
